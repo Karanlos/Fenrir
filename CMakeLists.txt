@@ -1,13 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(FenrirCode)
+project(Fenrir)
 
 include("${CMAKE_SOURCE_DIR}/cmake/config.txt")
 
 set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-main sfml-window-s sfml-graphics-s sfml-system-s FenrirMathLib)
 
-SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_SOURCE_DIR}/lib/include")
-set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_SOURCE_DIR}/include" CACHE STRING "haha" FORCE)
+set(CMAKE_INCLUDE_PATH "${CMAKE_SOURCE_DIR}/lib/include" "${CMAKE_SOURCE_DIR}/include" CACHE STRING "haha" FORCE)
 
 include_directories(${CMAKE_INCLUDE_PATH})
 
@@ -23,6 +22,9 @@ elseif(ISLINUX)
 endif()
 
 add_definitions(-DSFML_STATIC -DGLEW_STATIC)
+
+set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/lib")
+set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
 
 add_subdirectory(source/Engine)
 add_subdirectory(source/DataHandler)

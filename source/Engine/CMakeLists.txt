@@ -3,6 +3,7 @@ project(FenrirEngine)
 set(SRC
 	DrawEngine.cpp
 	GameEngine.cpp
+	ParticleRenderComponent.cpp
 	RenderComponent.cpp
 	RenderComponentOpgl2.cpp
 	RenderComponentOpgl3.cpp
@@ -12,9 +13,7 @@ set(SRC
 
 add_library(${PROJECT_NAME} STATIC ${SRC})
 
-install(TARGETS ${PROJECT_NAME}
-	RUNTIME DESTINATION bin
-	LIBRARY DESTINATION lib
-	ARCHIVE DESTINATION lib/static)
-
-set(FENRIR_LIBS ${FENRIR_LIBS} ${PROJECT_NAME})
+install(TARGETS FenrirEngine
+	RUNTIME DESTINATION ${CMAKE_BUILD_DIR}/bin
+	LIBRARY DESTINATION ${CMAKE_BUILD_DIR}/lib
+	ARCHIVE DESTINATION ${CMAKE_BUILD_DIR}/lib/static)
