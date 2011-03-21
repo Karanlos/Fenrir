@@ -1,0 +1,9 @@
+if(CMAKE_COMPILER_IS_GNUCXX)
+	set(GCCCOMPILER 1)
+endif()
+
+if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+	set(ISWINDOWS 1)
+elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+	set(ISLINUX 1)
+endif()
