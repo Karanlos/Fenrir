@@ -150,12 +150,12 @@ namespace fenm {
 	}
 
 	template <typename _T>
-	type_vec3<_T> type_vec3<_T>::operator *(const long& constant) {
+	type_vec3<_T> type_vec3<_T>::operator *(const long long& constant) {
 		return type_vec3<_T>(_x * constant, _y * constant, _z * constant);
 	}
 
 	template <typename _T>
-	type_vec3<_T>& type_vec3<_T>::operator *=(const long& constant) {
+	type_vec3<_T>& type_vec3<_T>::operator *=(const long long& constant) {
 		_x *= constant;
 		_y *= constant;
 		_z *= constant;

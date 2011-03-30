@@ -68,6 +68,19 @@ namespace fenm {
 	}
 
 	template <typename _T>
+	type_mat4<_T>& type_mat4<_T>::operator *=(const type_mat4<_T>& m) {
+		type_mat4<_T> tempM;
+
+		for(int x = 0; x < 4; x++)
+			for(int y = 0; y < 4; y++)
+				tempM[x * 4 + y] = m(x,0) * (*this)(0,y) + m(x,1) * (*this)(1,y) + m(x,2) * (*this)(2,y) + m(x,3) * (*this)(3,y);
+
+		*this = tempM;
+
+		return *this;
+	}
+
+	template <typename _T>
 	type_vec4<_T> type_mat4<_T>::operator *(const type_vec4<_T>& v) {
 		return type_vec4<_T>(v.x() * data[0] + v.y() * data[4] + v.z() * data[8] + v.w() * data[12],
 							v.x() * data[1] + v.y() * data[5] + v.z() * data[9] + v.w() * data[13],
@@ -76,13 +89,39 @@ namespace fenm {
 	}
 
 	template <typename _T>
-	type_mat4<_T> type_mat4<_T>::operator *(const _T& constant) {
+	type_mat4<_T> type_mat4<_T>::operator *(const double& constant) {
 		type_mat4<_T> temp;
 
 		for(int i = 0; i < 16; i++)
 			temp[i] = data[i] * constant;
 
 		return temp;
+	}
+
+	template <typename _T>
+	type_mat4<_T>& type_mat4<_T>::operator *=(const double& constant) {
+		for(int i = 0; i < 16; i++)
+			data[i] *= constant;
+
+		return *this;
+	}
+
+	template <typename _T>
+	type_mat4<_T> type_mat4<_T>::operator *(const long long& constant) {
+		type_mat4<_T> temp;
+
+		for(int i = 0; i < 16; i++)
+			temp[i] = data[i] * constant;
+
+		return temp;
+	}
+
+	template <typename _T>
+	type_mat4<_T>& type_mat4<_T>::operator *=(const long long& constant) {
+		for(int i = 0; i < 16; i++)
+			data[i] *= constant;
+
+		return *this;
 	}
 
 	template <typename _T>

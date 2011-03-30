@@ -15,9 +15,13 @@ namespace fenm {
 		_T operator ()(unsigned int col, unsigned int row) const;
 		_T operator ()(unsigned int n) const;
 		_T& operator [](unsigned int n);
-		type_mat2<_T> operator * (const type_mat2<_T>& m);
-		type_vec2<_T> operator * (const type_vec2<_T>& m);
-		type_mat2<_T> operator * (const _T& constant);
+		type_mat2<_T> operator *(const type_mat2<_T>& m);
+		type_mat2<_T>& operator *=(const type_mat2<_T>& m);
+		type_vec2<_T> operator *(const type_vec2<_T>& m);
+		type_mat2<_T> operator *(const double& constant);
+		type_mat2<_T>& operator *=(const double& constant);
+		type_mat2<_T> operator *(const long long& constant);
+		type_mat2<_T>& operator *=(const long long& constant);
 
 
 	protected:
