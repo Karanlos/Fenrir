@@ -6,7 +6,7 @@
 
 #include "DataHandler/Enums.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	class DrawEngine;
 

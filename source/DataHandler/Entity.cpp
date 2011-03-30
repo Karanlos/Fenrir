@@ -3,7 +3,7 @@
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	Entity::Entity() {
 		mesh = new Mesh();

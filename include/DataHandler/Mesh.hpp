@@ -3,7 +3,7 @@
 
 #include <GL/glew.h>
 
-namespace Fenrir {
+namespace fen {
 
 class Mesh {
 

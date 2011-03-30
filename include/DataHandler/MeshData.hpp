@@ -3,7 +3,7 @@
 
 #include <FenrirMath/FenrirMath.hpp>
 
-namespace Fenrir {
+namespace fen {
 
 	struct Vertex {
 		

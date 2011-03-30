@@ -5,7 +5,7 @@
 #include "DataHandler/Entity.hpp"
 #include "DataHandler/Enums.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	DrawEngine::DrawEngine() {
 		entityTemp = new Entity();

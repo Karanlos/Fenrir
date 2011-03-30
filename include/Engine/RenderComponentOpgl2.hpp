@@ -3,7 +3,7 @@
 
 #include "RenderComponent.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	class RenderComponentOpgl2 : public RenderComponent {
 

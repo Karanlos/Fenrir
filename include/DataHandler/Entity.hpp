@@ -9,7 +9,7 @@
 #include "Mesh.hpp"
 #include "Enums.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	class Entity {
 

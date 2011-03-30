@@ -16,7 +16,7 @@ namespace fenm {
 		type_vec4(const type_vec2<_T>& v, _T z, _T _w);
 		type_vec4(const type_vec3<_T>& v, _T _w);
 		type_vec4(const type_vec4<_T>& v);
-		virtual ~type_vec4();
+		~type_vec4();
 
 		void setPosition(_T x, _T y, _T z, _T _w);
 		void setPosition(const type_vec2<_T>& v, _T z, _T _w);

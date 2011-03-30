@@ -8,7 +8,7 @@
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	class Entity;
 	class FenrirMath;

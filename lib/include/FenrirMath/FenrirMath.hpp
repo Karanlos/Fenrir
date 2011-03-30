@@ -58,9 +58,25 @@ namespace fenm {
 	typedef type_vec3<int> ivec3;
 	typedef type_vec4<int> ivec4;
 
+	typedef type_vec2<long long> lvec2;
+	typedef type_vec3<long long> lvec3;
+	typedef type_vec4<long long> lvec4;
+
 	typedef type_mat2<float> mat2;
 	typedef type_mat3<float> mat3;
 	typedef type_mat4<float> mat4;
+
+	typedef type_mat2<double> dmat2;
+	typedef type_mat3<double> dmat3;
+	typedef type_mat4<double> dmat4;
+
+	typedef type_mat2<int> imat2;
+	typedef type_mat3<int> imat3;
+	typedef type_mat4<int> imat4;
+
+	typedef type_mat2<long long> lmat2;
+	typedef type_mat3<long long> lmat3;
+	typedef type_mat4<long long> lmat4;
 }
 
 #endif	/* FENRIRMATH_H */

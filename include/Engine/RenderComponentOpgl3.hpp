@@ -3,7 +3,7 @@
 
 #include "RenderComponent.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	class DrawEngine;
 	class Entity;

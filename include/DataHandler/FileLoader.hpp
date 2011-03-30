@@ -5,7 +5,7 @@
 #include <string>
 
 using namespace std;
-namespace Fenrir {
+namespace fen {
 
 	namespace FEnum {
 		enum {

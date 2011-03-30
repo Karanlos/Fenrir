@@ -1,7 +1,7 @@
 #ifndef STRUCTS_H
 #define	STRUCTS_H
 
-namespace Fenrir {
+namespace fen {
 
 	struct DrawEngineInfo {
 		sf::ContextSettings cSettings;

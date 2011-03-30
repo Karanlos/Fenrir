@@ -14,7 +14,7 @@
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	class RenderPass;
 

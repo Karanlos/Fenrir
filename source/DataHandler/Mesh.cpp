@@ -1,6 +1,6 @@
 #include "DataHandler/Mesh.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	Mesh::Mesh() {
 	}

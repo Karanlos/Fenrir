@@ -1,6 +1,6 @@
 #include "DataHandler/FileLoader.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	FileLoader::FileLoader(char* fileName, int sector) {
 

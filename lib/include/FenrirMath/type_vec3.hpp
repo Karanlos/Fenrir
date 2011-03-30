@@ -13,7 +13,7 @@ namespace fenm {
 		type_vec3(_T x, _T y, _T z);
 		type_vec3(const type_vec2<_T>& v, _T z);
 		type_vec3(const type_vec3<_T>& v);
-		virtual ~type_vec3();
+		~type_vec3();
 
 		void setPosition(_T x, _T y, _T z);
 		void setPosition(const type_vec3<_T>& v);

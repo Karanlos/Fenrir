@@ -7,7 +7,7 @@
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	GameEngine::GameEngine() {
 		DEngine = 0;
