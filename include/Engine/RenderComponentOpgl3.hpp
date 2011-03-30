@@ -1,7 +1,7 @@
 #ifndef RENDERCOMPONENTOPGL3_H
 #define	RENDERCOMPONENTOPGL3_H
 
-#include "RenderComponent.h"
+#include "RenderComponent.hpp"
 
 namespace Fenrir {
 

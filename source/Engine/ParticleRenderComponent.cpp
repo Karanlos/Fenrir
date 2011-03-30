@@ -1,4 +1,4 @@
-#include "Engine/ParticleRenderComponent.h"
+#include "Engine/ParticleRenderComponent.hpp"
 
 namespace Fenrir {
 

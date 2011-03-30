@@ -4,7 +4,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 
-#include "DataHandler/Enums.h"
+#include "DataHandler/Enums.hpp"
 
 namespace Fenrir {
 

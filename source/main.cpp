@@ -1,6 +1,6 @@
-#include "Engine/GameEngine.h"
-#include "Engine/DrawEngine.h"
-#include "DataHandler/Enums.h"
+#include "Engine/GameEngine.hpp"
+#include "Engine/DrawEngine.hpp"
+#include "DataHandler/Enums.hpp"
 
 int main(int argc, char** argv) {
 

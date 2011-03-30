@@ -1,4 +1,4 @@
-#include "Engine/RenderComponent.h"
+#include "Engine/RenderComponent.hpp"
 
 namespace Fenrir {
 

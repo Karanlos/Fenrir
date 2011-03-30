@@ -3,13 +3,11 @@
 
 #include <GL/glew.h>
 
-#include <FenrirMath/FenrirMath.h>
+#include <FenrirMath/FenrirMath.hpp>
 
-#include "Engine/RenderComponent.h"
-#include "Mesh.h"
-#include "Enums.h"
-
-using FenrirMath::Vector3Df;
+#include "Engine/RenderComponent.hpp"
+#include "Mesh.hpp"
+#include "Enums.hpp"
 
 namespace Fenrir {
 
@@ -19,8 +17,8 @@ namespace Fenrir {
 		Entity();
 		virtual ~Entity();
 
-		void setPosition(Vector3Df vec);
-		void move(Vector3Df vec);
+		void setPosition(const fenm::dvec3& vec);
+		void move(const fenm::dvec3& vec);
 
 		GLfloat* getBuffer(unsigned int& size, int buffers);
 		GLuint* getElementBuffer(unsigned int& size, bool uv);
@@ -28,7 +26,7 @@ namespace Fenrir {
 		void setRenderComponent(RenderComponent* rC);
 
 	protected:
-		Vector3Df position;
+		fenm::dvec3 position;
 		Mesh* mesh;
 		RenderComponent* rC;
 

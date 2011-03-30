@@ -1,4 +1,4 @@
-#include "DataHandler/Mesh.h"
+#include "DataHandler/Mesh.hpp"
 
 namespace Fenrir {
 

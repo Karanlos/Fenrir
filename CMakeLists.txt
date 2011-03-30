@@ -4,7 +4,7 @@ project(Fenrir)
 
 include("${CMAKE_SOURCE_DIR}/cmake/config.txt")
 
-set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-main sfml-window-s sfml-graphics-s sfml-system-s FenrirMathLib)
+set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-main sfml-window-s sfml-graphics-s sfml-system-s)
 
 set(CMAKE_INCLUDE_PATH "${CMAKE_SOURCE_DIR}/lib/include" "${CMAKE_SOURCE_DIR}/include" CACHE STRING "haha" FORCE)
 

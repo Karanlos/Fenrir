@@ -1,5 +1,5 @@
-#include "Engine/RenderComponentOpgl3.h"
-#include "DataHandler/Entity.h"
+#include "Engine/RenderComponentOpgl3.hpp"
+#include "DataHandler/Entity.hpp"
 
 namespace Fenrir {
 

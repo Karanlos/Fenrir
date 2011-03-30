@@ -1,5 +1,5 @@
-#include "DataHandler/Entity.h"
-#include "DataHandler/Mesh.h"
+#include "DataHandler/Entity.hpp"
+#include "DataHandler/Mesh.hpp"
 
 using namespace std;
 
@@ -18,11 +18,11 @@ namespace Fenrir {
 
 	}
 
-	void Entity::setPosition(FenrirMath::Vector3Df vec) {
+	void Entity::setPosition(const fenm::dvec3& vec) {
 		position = vec;
 	}
 
-	void Entity::move(FenrirMath::Vector3Df vec) {
+	void Entity::move(const fenm::dvec3& vec) {
 		position += vec;
 	}
 

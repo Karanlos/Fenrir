@@ -4,7 +4,7 @@
 #include <list>
 #include <GL/glew.h>
 
-#include "Engine/RenderComponent.h"
+#include "Engine/RenderComponent.hpp"
 
 using namespace std;
 

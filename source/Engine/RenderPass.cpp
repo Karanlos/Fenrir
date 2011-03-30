@@ -1,5 +1,5 @@
-#include "Engine/RenderPass.h"
-#include "Engine/RenderComponent.h"
+#include "Engine/RenderPass.hpp"
+#include "Engine/RenderComponent.hpp"
 
 namespace Fenrir {
 
