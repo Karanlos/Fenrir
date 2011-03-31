@@ -148,7 +148,7 @@ namespace fenm {
 	double determinant(const type_mat2<_T>& m) {
 		return m(0) * m(3) - m(1) * m(2);
 	}
-
+	
 	template <typename _T>
 	type_mat2<_T> identityMatrix(const type_mat2<_T>& m) {
 		type_mat2<_T> temp;

@@ -1,5 +1,7 @@
 #include "Engine/GameEngine.hpp"
 #include "Engine/DrawEngine.hpp"
+#include "DataHandler/Mesh.hpp"
+
 
 int main(int argc, char** argv) {
 
@@ -10,7 +12,7 @@ int main(int argc, char** argv) {
 	GEngine.run();
 
 	delete DEngine;
-
+	
     return 0;
 
 }

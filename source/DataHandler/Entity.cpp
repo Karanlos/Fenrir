@@ -6,7 +6,7 @@ using namespace std;
 namespace fen {
 
 	Entity::Entity() {
-		mesh = new Mesh();
+		mesh = new Mesh("hej.txt");
 		rC  = 0;
 	}
 
