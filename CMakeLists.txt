@@ -21,7 +21,7 @@ elseif(ISLINUX)
 	set(FENRIR_LIBS ${FENRIR_LIBS} GLU GL)
 endif()
 
-add_definitions(-DSFML_STATIC -DGLEW_STATIC)
+add_definitions(-DSFML_STATIC -DGLEW_STATIC -Dllong=__int64)
 
 set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/lib")
 set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
