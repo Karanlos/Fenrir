@@ -1,11 +1,11 @@
 #include <cstdlib>
 
-#include "Engine/DrawEngine.h"
-#include "Engine/RenderPass.h"
-#include "DataHandler/Entity.h"
-#include "DataHandler/Enums.h"
+#include "Engine/DrawEngine.hpp"
+#include "Engine/RenderPass.hpp"
+#include "DataHandler/Entity.hpp"
+#include "DataHandler/Enums.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	DrawEngine::DrawEngine() {
 		entityTemp = new Entity();

@@ -1,9 +1,9 @@
 #ifndef PARTICLERENDERCOMPONENT_H
 #define	PARTICLERENDERCOMPONENT_H
 
-#include "RenderComponent.h"
+#include "RenderComponent.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	class ParticleRenderComponent : public RenderComponent {
 

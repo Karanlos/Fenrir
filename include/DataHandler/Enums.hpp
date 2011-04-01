@@ -1,7 +1,7 @@
 #ifndef ENUMS_H
 #define	ENUMS_H
 
-namespace Fenrir {
+namespace fen {
 	
 	namespace FBEnum {
 		enum Buffers {

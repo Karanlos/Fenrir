@@ -4,11 +4,11 @@
 #include <list>
 #include <GL/glew.h>
 
-#include "Engine/RenderComponent.h"
+#include "Engine/RenderComponent.hpp"
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	class Entity;
 	class FenrirMath;

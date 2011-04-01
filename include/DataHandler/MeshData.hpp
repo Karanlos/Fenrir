@@ -1,22 +1,19 @@
 #ifndef MESHDATA_H
 #define	MESHDATA_H
 
-#include <FenrirMath/FenrirMath.h>
+#include <FenrirMath/FenrirMath.hpp>
 
-using FenrirMath::Vector2Df;
-using FenrirMath::Vector3Df;
-
-namespace Fenrir {
+namespace fen {
 
 	struct Vertex {
 		
-		Vector3Df position;
+		fenm::vec3 position;
 
 	};
 
 	struct UV {
 
-		Vector2Df position;
+		fenm::vec2 position;
 
 	};
 

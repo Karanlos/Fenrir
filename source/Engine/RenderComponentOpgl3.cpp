@@ -1,7 +1,7 @@
-#include "Engine/RenderComponentOpgl3.h"
-#include "DataHandler/Entity.h"
+#include "Engine/RenderComponentOpgl3.hpp"
+#include "DataHandler/Entity.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	RenderComponentOpgl3::RenderComponentOpgl3(Entity* e, DrawEngine* de) : RenderComponent(e, de) {
 	}

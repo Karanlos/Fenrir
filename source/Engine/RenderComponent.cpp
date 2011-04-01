@@ -1,6 +1,6 @@
-#include "Engine/RenderComponent.h"
+#include "Engine/RenderComponent.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	RenderComponent::RenderComponent(Entity* e, DrawEngine* de) {
 		this->e = e;

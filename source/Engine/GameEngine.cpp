@@ -1,13 +1,13 @@
 #include <fstream>
 #include <string>
 
-#include "Engine/DrawEngine.h"
-#include "Engine/GameEngine.h"
-#include "DataHandler/FileLoader.h"
+#include "Engine/DrawEngine.hpp"
+#include "Engine/GameEngine.hpp"
+#include "DataHandler/FileLoader.hpp"
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	GameEngine::GameEngine() {
 		DEngine = 0;

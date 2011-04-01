@@ -1,6 +1,6 @@
-#include "Engine/ParticleRenderComponent.h"
+#include "Engine/ParticleRenderComponent.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	ParticleRenderComponent::ParticleRenderComponent(Entity* e, DrawEngine* de) : RenderComponent(e, de) {
 	}

@@ -2,7 +2,7 @@ project(Fenrir)
 
 set(SRC
 	main.cpp
-	glew.c
+	glew.cpp
 
 )
 

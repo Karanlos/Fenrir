@@ -9,12 +9,12 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-#include "DataHandler/Structs.h"
-#include "RenderComponentOpgl2.h"
+#include "DataHandler/Structs.hpp"
+#include "RenderComponentOpgl2.hpp"
 
 using namespace std;
 
-namespace Fenrir {
+namespace fen {
 
 	class RenderPass;
 

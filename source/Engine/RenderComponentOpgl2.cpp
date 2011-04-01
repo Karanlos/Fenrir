@@ -1,7 +1,7 @@
-#include "Engine/RenderComponentOpgl2.h"
-#include "DataHandler/Entity.h"
+#include "Engine/RenderComponentOpgl2.hpp"
+#include "DataHandler/Entity.hpp"
 
-namespace Fenrir {
+namespace fen {
 
 	RenderComponentOpgl2::RenderComponentOpgl2(Entity* e, DrawEngine* de, int buffers) : RenderComponent(e, de) {
 		this->buffers = buffers;
