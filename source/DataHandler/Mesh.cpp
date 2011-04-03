@@ -18,23 +18,14 @@ namespace fen {
 
 	GLfloat* Mesh::getVertexBuffer() {
 
-		GLfloat* tempBuffer = new GLfloat[4 * 3];
+		GLfloat* tempBuffer = new GLfloat[vertexVector.size() * 3];
 
-		tempBuffer[0]  = 1.0f;
-		tempBuffer[1]  = 1.0f;
-		tempBuffer[2]  = 0.0f;
-		
-		tempBuffer[3]  = 1.0f;
-		tempBuffer[4]  = -1.0f;
-		tempBuffer[5]  = 0.0f;
-
-		tempBuffer[6]  = -1.0f;
-		tempBuffer[7]  = -1.0f;
-		tempBuffer[8]  = 0.0f;
-
-		tempBuffer[9]  = -1.0f;
-		tempBuffer[10] = 1.0f;
-		tempBuffer[11] = 0.0f;
+		for(unsigned int i = 0; i < vertexVector.size(); i++) {
+			std::cout << "Hej" << std::endl;
+			tempBuffer[i * 3]	  = vertexVector[i].position.x();
+			tempBuffer[i * 3 + 1] = vertexVector[i].position.y();
+			tempBuffer[i * 3 + 2] = vertexVector[i].position.z();
+		}
 
 		return tempBuffer;
 
@@ -42,7 +33,7 @@ namespace fen {
 
 	GLfloat* Mesh::getNormalBuffer() {
 
-		GLfloat* tempBuffer = new GLfloat[4 * 3];
+		GLfloat* tempBuffer = new GLfloat[vertexVector.size() * 3];
 
 		tempBuffer[0]  = 0.0f;
 		tempBuffer[1]  = 0.0f;
