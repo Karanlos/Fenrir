@@ -14,16 +14,33 @@ namespace fen {
 	class Mesh {
 
 		public:
+			/**
+			 * Default constructor.
+             * @param fileName: The name of the file that contains the mesh data.
+             */
 			Mesh(const char* fileName);
 			virtual ~Mesh();
 
 			/**
 			 * Returns the vertexbuffer of the mesh.
-			 * @return
+			 * @return Returns a pointer to an array that holds the vertex data.
 			 */
 			GLfloat* getVertexBuffer();
+			/**
+			 * Returns a buffer containing the normals of the mesh verticies.
+			 * @return Returns a pointer to an array that holds the normal data.
+			 */
 			GLfloat* getNormalBuffer();
-			GLfloat* getTangentBuffer();
+			/**
+			 * Returns a buffer containing the tangent normals of the mesh verticies.
+             * @param normalBuffer: Pointer to a buffer containing normal
+             * @return Returns a
+             */
+			GLfloat* getTangentBuffer(GLfloat* normalBuffer);
+			/**
+			 * Returns the vertexbuffer of the mesh.
+			 * @return Returns a pointer to an array that holds the vertex data.
+			 */
 			GLfloat* getUVBuffer();
 			GLuint* getElementBuffer(bool uv);
 
