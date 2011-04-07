@@ -20,6 +20,10 @@ namespace fen {
 		void setPosition(const fenm::dvec3& vec);
 		void move(const fenm::dvec3& vec);
 
+		/**
+         * @param size: Reference to an unsigned int that stores the total byte size of the buffer.
+         * @return Returns a pointer to a buffer that contains the transformed vertex(and normal and/or uv) information or returns an element buffer.
+         */
 		GLfloat* getBuffer(unsigned int& size, int buffers);
 		GLuint* getElementBuffer(unsigned int& size, bool uv);
 

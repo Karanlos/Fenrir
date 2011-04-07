@@ -31,58 +31,28 @@ namespace fen {
 
 	}
 
-	GLfloat* Mesh::getNormalBuffer() {
-
-		GLfloat* tempBuffer = new GLfloat[vertexVector.size() * 3];
-
-		tempBuffer[0]  = 0.0f;
-		tempBuffer[1]  = 0.0f;
-		tempBuffer[2]  = 1.0f;
-
-		tempBuffer[3]  = 0.0f;
-		tempBuffer[4]  = 0.0f;
-		tempBuffer[5]  = 1.0f;
-
-		tempBuffer[6]  = 0.0f;
-		tempBuffer[7]  = 0.0f;
-		tempBuffer[8]  = 1.0f;
-
-		tempBuffer[9]  = 0.0f;
-		tempBuffer[10] = 0.0f;
-		tempBuffer[11] = 1.0f;
-
-		return tempBuffer;
-
-
-	}
-
-	GLfloat* Mesh::getTangentBuffer() {
-		return 0;
-	}
-
 	GLfloat* Mesh::getUVBuffer() {
 		return 0;
 	}
 
 	GLuint* Mesh::getElementBuffer(bool uv) {
-		GLuint* tempBuffer = new GLuint[6];
+		GLuint* tempBuffer = new GLuint[faceVector.size() * 3];
 
-		tempBuffer[0] = 0;
-		tempBuffer[1] = 1;
-		tempBuffer[2] = 2;
-		tempBuffer[3] = 0;
-		tempBuffer[4] = 2;
-		tempBuffer[5] = 3;
+		for(int i = 0; i < faceVector.size(); i++) {
+			tempBuffer[i * 3]     = faceVector[i].verts[0];
+			tempBuffer[i * 3 + 1] = faceVector[i].verts[1];
+			tempBuffer[i * 3 + 2] = faceVector[i].verts[2];
+		}
 
 		return tempBuffer;
 	}
 
 	GLuint Mesh::getNumVerticies(bool uv) {
-		return 4;
+		return vertexVector.size();
 	}
 
 	GLuint Mesh::getNumElements(bool uv) {
-		return 6;
+		return faceVector.size() * 3;
 	}
 
 	void Mesh::loadMeshFile(const char* fileName) {
@@ -116,7 +86,7 @@ namespace fen {
 		faceVector.push_back(f2);
 
 		faceVector.resize(2, f1);
-
+		
 	}
 
 }

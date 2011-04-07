@@ -27,17 +27,6 @@ namespace fen {
 			 */
 			GLfloat* getVertexBuffer();
 			/**
-			 * Returns a buffer containing the normals of the mesh verticies.
-			 * @return Returns a pointer to an array that holds the normal data.
-			 */
-			GLfloat* getNormalBuffer();
-			/**
-			 * Returns a buffer containing the tangent normals of the mesh verticies.
-             * @param normalBuffer: Pointer to a buffer containing normal
-             * @return Returns a
-             */
-			GLfloat* getTangentBuffer(GLfloat* normalBuffer);
-			/**
 			 * Returns the vertexbuffer of the mesh.
 			 * @return Returns a pointer to an array that holds the vertex data.
 			 */

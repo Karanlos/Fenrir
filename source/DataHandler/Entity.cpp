@@ -25,14 +25,12 @@ namespace fen {
 	void Entity::move(const fenm::dvec3& vec) {
 		position += vec;
 	}
-
-	// Returns a pointer to a buffer that contains the transformed vertex(and normal and/or uv) information or returns an element buffer.
-	// The parameter size will contain the byte size of the buffer.
+	
 	GLfloat* Entity::getBuffer(unsigned int& size, int buffers) {
 
 		GLfloat* tempBuffer;
 		GLfloat* vertexTempBuffer = mesh->getVertexBuffer();
-		GLfloat* normalTempBuffer = mesh->getNormalBuffer();
+		GLfloat* normalTempBuffer = getNormalBuffer();
 
 		tempBuffer = new GLfloat[24];
 
@@ -63,6 +61,31 @@ namespace fen {
 		size = mesh->getNumElements(false) * sizeof(GLuint);
 
 		return tempBuffer;
+
+	}
+
+	GLfloat* Entity::getNormalBuffer() {
+
+		GLfloat* tempBuffer = new GLfloat[mesh->getNumVerticies(true) * 3];
+
+		tempBuffer[0]  = 0.0f;
+		tempBuffer[1]  = 0.0f;
+		tempBuffer[2]  = 1.0f;
+
+		tempBuffer[3]  = 0.0f;
+		tempBuffer[4]  = 0.0f;
+		tempBuffer[5]  = 1.0f;
+
+		tempBuffer[6]  = 0.0f;
+		tempBuffer[7]  = 0.0f;
+		tempBuffer[8]  = 1.0f;
+
+		tempBuffer[9]  = 0.0f;
+		tempBuffer[10] = 0.0f;
+		tempBuffer[11] = 1.0f;
+
+		return tempBuffer;
+
 
 	}
 
