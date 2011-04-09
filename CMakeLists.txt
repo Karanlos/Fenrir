@@ -4,7 +4,11 @@ project(Fenrir)
 
 include("${CMAKE_SOURCE_DIR}/cmake/config.txt")
 
-set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-main sfml-window-s sfml-graphics-s sfml-system-s)
+if(ISWINDOWS)
+	set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-main sfml-window-s sfml-graphics-s sfml-system-s)
+elseif(ISLINUX)
+	set(FENRIR_LIBS FenrirEngine FenrirDataHandler sfml-window-s sfml-graphics-s sfml-system-s)
+endif()
 
 set(CMAKE_INCLUDE_PATH "${CMAKE_SOURCE_DIR}/lib/include" "${CMAKE_SOURCE_DIR}/include")
 
@@ -17,7 +21,7 @@ elseif(MSVC)
 	link_directories("${CMAKE_SOURCE_DIR}/lib/msvc")
 	set(FENRIR_LIBS ${FENRIR_LIBS} glu32 opengl32)
 elseif(ISLINUX)
-	link_directories("${CMAKE_SOURCE_DIR}/lib/gcc")
+	link_directories("${CMAKE_SOURCE_DIR}/lib/linux")
 	set(FENRIR_LIBS ${FENRIR_LIBS} GLU GL)
 endif()
 
