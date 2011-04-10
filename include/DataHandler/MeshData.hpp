@@ -7,7 +7,7 @@ namespace fen {
 
 	struct Vertex {
 		/**
-		 A 3D vector that represents the position of the vertex. tests
+		 A 3D vector that represents the position of the vertex.
 		 */
 		fenm::vec3 position;
 		/**
