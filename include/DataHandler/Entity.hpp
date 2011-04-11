@@ -6,10 +6,11 @@
 #include <FenrirMath/FenrirMath.hpp>
 
 #include "Engine/RenderComponent.hpp"
-#include "Mesh.hpp"
 #include "Enums.hpp"
 
 namespace fen {
+	
+	class Mesh;
 
 	class Entity {
 

@@ -21,7 +21,6 @@ namespace fen {
 		GLfloat* tempBuffer = new GLfloat[vertexVector.size() * 3];
 
 		for(unsigned int i = 0; i < vertexVector.size(); i++) {
-			std::cout << "Hej" << std::endl;
 			tempBuffer[i * 3]	  = vertexVector[i].position.x();
 			tempBuffer[i * 3 + 1] = vertexVector[i].position.y();
 			tempBuffer[i * 3 + 2] = vertexVector[i].position.z();

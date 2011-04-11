@@ -3,6 +3,7 @@
 #include "Engine/DrawEngine.hpp"
 #include "Engine/RenderPass.hpp"
 #include "DataHandler/Entity.hpp"
+#include "DataHandler/Mesh.hpp"
 #include "DataHandler/Enums.hpp"
 
 namespace fen {
@@ -148,13 +149,7 @@ namespace fen {
 		} else {
 			
 			glGenVertexArrays(1, &(info->VAOID));
-			glBindVertexArray(info->VAOID);
-
 			glGenBuffers(2, &(info->VBOID));
-			glBindBuffer(GL_ARRAY_BUFFER, info->VBOID);
-			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, info->EBOID);
-
-			glBindVertexArray(0);
 
 		}
 

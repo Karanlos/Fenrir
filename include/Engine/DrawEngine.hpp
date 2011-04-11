@@ -51,9 +51,9 @@ namespace fen {
 		void loadConfigFile();
 		void setWindowDimensions(unsigned int x, unsigned int y, unsigned short BPP);
 
-		virtual void generateGLBuffer(GLBufferInfo* info);
-		virtual void updateGLBuffer(GLBufferInfo* info);
-		virtual void deleteGLBuffer(GLBufferInfo* info);
+		void generateGLBuffer(GLBufferInfo* info);
+                void updateGLBuffer(GLBufferInfo* info);
+		void deleteGLBuffer(GLBufferInfo* info);
 
 	};
 
