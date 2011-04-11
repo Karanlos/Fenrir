@@ -2,8 +2,9 @@
 #define	ENUMS_H
 
 namespace fen {
-	
+
 	namespace FBEnum {
+
 		enum Buffers {
 			VERTEX_BUFFER = 1 << 0,
 			NORMAL_BUFFER = 1 << 1,
@@ -14,6 +15,7 @@ namespace fen {
 	}
 
 	namespace FCEnum {
+
 		enum Controls {
 			FORWARD,
 			BACKWARD,

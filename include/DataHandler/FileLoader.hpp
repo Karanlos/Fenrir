@@ -8,6 +8,7 @@ using namespace std;
 namespace fen {
 
 	namespace FEnum {
+
 		enum {
 			controls,
 			graphicsettings
@@ -15,7 +16,6 @@ namespace fen {
 	}
 
 	class FileLoader {
-
 	public:
 		FileLoader();
 		FileLoader(char* fileName, int sector);
@@ -28,7 +28,7 @@ namespace fen {
 		fstream file;
 
 	};
-	
+
 }
 
 #endif	/* FILELOADER_H */
