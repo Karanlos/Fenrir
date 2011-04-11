@@ -4,7 +4,6 @@
 #include <list>
 #include <iostream>
 #include <GL/glew.h>
-#include <GL/wglew.h>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>

@@ -130,7 +130,7 @@ namespace fenm {
 
 		std::cout << "det: " << temp << std::endl;
 
-		if((double)temp < 0.0000001d && (double)temp > -0.0000001d)
+		if((double)temp < 0.0000001 && (double)temp > -0.0000001)
 			return m;
 
 		temp = 1 / temp;
