@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="220"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1597055"
+     inkscape:cx="173.88731"
+     inkscape:cy="169.69427"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-832.36218)">
+    <path
+       style="fill:#6464c8;fill-opacity:1;stroke:none"
+       d="m 267.73323,838.34192 c -3.18209,0.008 -14.88424,6.52709 -23.18483,9.41706 -26.5619,9.24791 -41.12132,14.99462 -57.29137,16.57053 -16.17005,1.57592 -22.38582,-9.24028 -36.39149,-7.2836 -14.00568,1.95668 -33.17539,7.07539 -47.93382,10.8657 -14.758431,3.79032 -29.182487,8.0039 -59.629874,11.17904 2.300341,12.45586 26.448561,11.14628 31.701486,17.55737 2.991076,3.65055 -7.629738,14.0386 -5.637222,16.87568 1.283134,1.82701 13.186959,-3.85919 13.572183,-1.89719 0.318154,1.62042 -7.389248,11.72059 -5.532358,12.77616 2.460893,1.39893 14.553071,-6.29103 14.1294,-4.11278 -19.338302,29.14608 -0.419705,6.33171 4.038105,17.71769 -24.308127,48.57541 -39.069809,66.00882 -85.7181914,113.53762 37.0801614,-6.5227 94.0991014,-4.1856 123.9842014,-0.3576 9.83059,-27.4627 12.84303,-49.3239 22.26299,-64.63186 2.66844,-4.33636 3.90711,4.02643 8.8299,10.82355 6.45513,-14.50699 9.25552,-18.91834 13.09006,-23.11099 5.96979,-6.52731 6.65938,-1.74492 14.65095,5.28768 7.45745,-11.47865 24.00551,-34.12296 28.07788,-38.47616 26.17352,-15.87293 23.25022,-12.37693 43.68368,-24.02748 0.98856,-8.16044 0.61572,-8.04095 1.85095,-13.13525 1.23522,-5.0943 -17.10574,7.2883 -46.89382,4.07513 27.54941,-32.62981 19.02502,-19.13132 50.33681,-44.23406 0.78549,-16.37866 -1.47665,-10.97558 -1.99562,-25.41624 z m -89.57657,42.4654 c -9.16413,1.74393 -10.56187,3.27904 -15.99866,3.18579 -5.75621,-0.0987 -10.66627,-2.3586 -16.81298,-3.95186 -7.49837,-1.94362 -8.05027,-0.82406 -17.45929,-1.72245 3.28868,-5.62324 8.31833,-6.49133 24.87115,-9.41454 15.91088,3.76778 15.86286,7.49182 25.39978,11.90306 z"
+       id="path3029"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssscssssccccscscccsccccasccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:85.85853577px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#6464c8;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold Italic"
+       x="187.48196"
+       y="1033.8311"
+       id="text3804"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3806"
+         x="187.48196"
+         y="1033.8311"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:Impact Bold Italic">ENRIR</tspan></text>
+  </g>
+</svg>
