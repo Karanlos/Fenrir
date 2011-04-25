@@ -11,6 +11,28 @@ namespace fne {
 
     class NodeBase;
 
+	enum nodeErrorType {
+		/**
+		 * If the current node and the node it's being connected to creates a loop NODE_ERROR_LOOP is thrown
+		 */
+		NODE_ERROR_LOOP,
+		/**
+		 * If a external loop somewhere is found somewhere outside the current loop check NODE_ERROR_EXTERNAL_LOOP is thrown.
+		 */
+		NODE_ERROR_EXTERNAL_LOOP
+	};
+	
+	struct ErrorInfo {
+		/**
+		 * Which type the error is.
+		 */
+		nodeErrorType type;
+		/**
+		 * At which node the error was found.
+		 */
+		NodeBase* n;
+	};
+	
     enum sTypes {
         CONSTANT,
         VEC2,
@@ -26,7 +48,7 @@ namespace fne {
 //                        "VEC3",
 //                        "VEC4"};
     
-    struct SocketConnectInfo {
+    struct SocketConnectionInfo {
         NodeBase* node;
         char socketID;
     };
@@ -51,12 +73,12 @@ namespace fne {
         /**
          * List of nodes the socket is connected to. List always has a length of maximum 1 if it's an input socket.
          */
-        std::list<SocketConnectInfo> nodes;
+        std::list<SocketConnectionInfo> nodes;
     };
 
     class NodeBase {
     public:
-        NodeBase();
+        NodeBase(const std::list<NodeBase*>* nodes);
         virtual ~NodeBase();
 
         /**
@@ -79,6 +101,7 @@ namespace fne {
          * @return 
          */
         sTypes getSocketType(char socketID);
+        bool getInputType(char socketID);
         
         void print();
 
@@ -92,13 +115,17 @@ namespace fne {
 
         void removeNodeConnectFrom(NodeBase* n, char socketID, char socketIDFrom);
 
-        bool isCircular(NodeBase* n, bool* usedArray);
+        void isCircular(NodeBase* n, std::map<NodeBase*, bool>* checkedNodes) throw (ErrorInfo);
         
         virtual void update() = 0;
 
         std::vector<SocketInfo> sockets;
         
         std::string name;
+        
+        int loopMax;
+        
+        const std::list<NodeBase*>* nodes;
 
     };
 
