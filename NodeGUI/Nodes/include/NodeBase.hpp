@@ -117,7 +117,7 @@ namespace fne {
 
         void isCircular(NodeBase* n, std::map<NodeBase*, bool>* checkedNodes) throw (ErrorInfo);
         
-        virtual void update() = 0;
+		virtual void render() = 0;
 
         std::vector<SocketInfo> sockets;
         

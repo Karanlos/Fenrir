@@ -18,7 +18,7 @@ namespace fne {
 	void NodeBase::connectTo(NodeBase* n, char socketID, char socketIDTo) {
 		if (this == n)
 			return;
-		
+
 		std::cout << std::endl << std::endl << "Node: " << this->name << " NodeTo: " << n->name << " socketID: " << int(socketID) << " socketIDTo: " << int(socketIDTo) << std::endl;
 
 		std::map < NodeBase*, bool> checkedNodes;
@@ -33,7 +33,7 @@ namespace fne {
 				std::cout << __LINE__ << std::endl;
 				return;
 			}
-			
+
 			try {
 				n->isCircular(this, &checkedNodes);
 			} catch (ErrorInfo info) {
@@ -54,7 +54,7 @@ namespace fne {
 				std::cout << __LINE__ << std::endl;
 				return;
 			}
-			
+
 			try {
 				n->isCircular(this, &checkedNodes);
 			} catch (ErrorInfo info) {
@@ -136,12 +136,12 @@ namespace fne {
 		sockets[socketID].nodes.remove(sci);
 	}
 
-	void NodeBase::isCircular(NodeBase* n, std::map<NodeBase*, bool>* checkedNodes) throw(ErrorInfo) {
+	void NodeBase::isCircular(NodeBase* n, std::map<NodeBase*, bool>* checkedNodes) throw (ErrorInfo) {
 		if (!checkedNodes->find(this)->second && this == n) {
 			std::cout << __LINE__ << std::endl;
 			ErrorInfo info = {NODE_ERROR_LOOP, this};
 			throw info;
-		} else if(checkedNodes->find(this)->second) {
+		} else if (checkedNodes->find(this)->second) {
 			ErrorInfo info = {NODE_ERROR_EXTERNAL_LOOP, this};
 			throw info;
 		}
@@ -156,13 +156,13 @@ namespace fne {
 					std::cout << __LINE__ << std::endl;
 					try {
 						ite->node->isCircular(n, checkedNodes);
-					} catch(ErrorInfo info) {
+					} catch (ErrorInfo info) {
 						throw info;
 					}
-//					if (ite->node->isCircular(n, checkedNodes)) {
-//						std::cout << __LINE__ << std::endl;
-//						return true;
-//					}
+					//					if (ite->node->isCircular(n, checkedNodes)) {
+					//						std::cout << __LINE__ << std::endl;
+					//						return true;
+					//					}
 				}
 			}
 		}
