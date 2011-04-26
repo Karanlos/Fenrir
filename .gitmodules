@@ -1,3 +1,9 @@
 [submodule "lib32/FenrirMath"]
 	path = lib32/FenrirMath
 	url = git@github.com:Karanlos/Fenrir-Math-Library.git
+[submodule "lib32/include/FenrirMath"]
+	path = lib32/include/FenrirMath
+	url = git@github.com:Karanlos/Fenrir-Math-Library.git
+[submodule "lib64/include/FenrirMath"]
+	path = lib64/include/FenrirMath
+	url = git@github.com:Karanlos/Fenrir-Math-Library.git
