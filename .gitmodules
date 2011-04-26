@@ -1,0 +1,3 @@
+[submodule "lib32/FenrirMath"]
+	path = lib32/FenrirMath
+	url = git@github.com:Karanlos/Fenrir-Math-Library.git
