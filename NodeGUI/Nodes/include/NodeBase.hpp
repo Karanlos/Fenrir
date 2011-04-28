@@ -117,7 +117,16 @@ namespace fne {
 
         void isCircular(NodeBase* n, std::map<NodeBase*, bool>* checkedNodes) throw (ErrorInfo);
         
-		virtual void render() = 0;
+		/**
+		 * Renders a node with minimum(which is 50px or the nessasery width to display the node properly with all sockets) width and 0 height.
+         */
+		virtual void render();
+		/**
+		 * Renders a node with the specified width and height. If the width is less than the nessasery width to see all the sockets it will choose the minimum needed size for the rendering.
+         * @param width defines how wide the node is.
+         * @param height defines how tall the midsection is.
+         */
+		void render(unsigned short width, unsigned short height);
 
         std::vector<SocketInfo> sockets;
         

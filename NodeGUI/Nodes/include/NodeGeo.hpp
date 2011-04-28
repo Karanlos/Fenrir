@@ -5,15 +5,20 @@
 #include "NodeBase.hpp"
 
 namespace fne {
-	
+
 	class NodeGeo : public NodeBase {
 	public:
 		
-	protected:
-		GLuint geoID;
+		NodeGeo(const std::list<NodeBase*>* nodes);
+
+		void render();
 		
+	protected:
+
+		GLuint geoID;
+
 	};
-	
+
 }
 
-#endif //NODEGEO_Hs
+#endif //NODEGEO_H

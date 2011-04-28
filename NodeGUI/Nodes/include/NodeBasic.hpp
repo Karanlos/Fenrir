@@ -1,4 +1,5 @@
 #ifndef NODEBASIC_HPP
+#define	NODEBASIC_HPP
 
 #include <GL/glew.h>
 #include "NodeBase.hpp"
@@ -7,7 +8,7 @@ namespace fne {
 
 	class NodeBasic : public NodeBase {
 	public:
-		NodeBasic(GLuint textureID);
+		NodeBasic(const std::list<NodeBase*>* nodes, GLuint textureID);
 		
 		void render();
 		
@@ -17,8 +18,6 @@ namespace fne {
 	};
 
 }
-
-#define	NODEBASIC_HPP
 
 
 

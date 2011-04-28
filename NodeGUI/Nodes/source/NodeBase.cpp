@@ -219,5 +219,13 @@ namespace fne {
 		}
 
 	}
+	
+	void NodeBase::render() {
+		render(50, 0);
+	}
+	
+	void NodeBase::render(unsigned int width, unsigned int height) {
+		
+	}
 
 }

@@ -1,6 +1,9 @@
 
 set(SRC 
 	NodeBase.cpp
+	NodeBasic.cpp
+	NodeTexture.cpp
+	NodeGeo.cpp
 	../../../source/glew.cpp
 )
 

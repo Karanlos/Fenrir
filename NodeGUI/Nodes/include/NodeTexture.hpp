@@ -9,6 +9,8 @@ namespace fne {
 	class NodeTexture : public NodeBase {
 	public:
 		
+		void render();
+		
 	protected:
 		GLuint textureID;
 		
